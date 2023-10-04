@@ -1,0 +1,59 @@
+header {
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 10vw;
+}
+
+
+#navbarbtn {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.linha {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8px;
+    height: 3px;
+    width: 33px;
+}
+
+ul {
+    display: flex;
+    margin-right: 8vw;
+}
+
+li>a {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+li>a:hover {
+    background-color: rgba(68, 68, 68, 0.178);
+    transition: .5s;
+}
+
+@media (max-width: 840px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbarbtn {
+        display: block;
+    }
+}
